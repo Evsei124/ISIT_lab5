@@ -8,3 +8,13 @@ C:\Users\Admin\Desktop\Истомин\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka
 C:\Users\Admin\Desktop\Истомин\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka.pdb
 C:\Users\Admin\Desktop\Истомин\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.exe
 C:\Users\Admin\Desktop\Истомин\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.pdb
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka.exe.config
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka.exe
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka.pdb
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.Form1.resources
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.Properties.Resources.resources
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.exe
+C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.pdb

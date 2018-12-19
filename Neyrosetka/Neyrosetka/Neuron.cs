@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Neyrosetka
 {
-    internal interface INeuron
+    public interface INeuron
     {
+        string Name { get; set; }
         List<IDendrite> Dendrites { get; set; }
         double AxonValue { get; set; }
 
@@ -12,21 +14,25 @@ namespace Neyrosetka
     }
 
 
-    internal interface IDendrite
+    public interface IDendrite
     {
         double Weight { get; set; }
-        IDendrite AddToNeuron(INeuron neuron);
+        void AddToNeuron(INeuron neuron);
         INeuron GetSourceNeuron();
     }
 
-    internal class Neuron : INeuron
+    public class Neuron : INeuron
     {
-        private string _name;
+        public string Name { get; set; }
 
+        public Neuron()
+        {
+            this.Dendrites = new List<IDendrite>();
+        }
 
         public Neuron(string Name)
         {
-            _name = Name;
+            this.Name = Name;
             Dendrites = new List<IDendrite>();
             AxonValue = 0.5;
         }
@@ -34,53 +40,42 @@ namespace Neyrosetka
         public double AxonValue { get; set; }
 
         public List<IDendrite> Dendrites { get; set; }
-
-        public void AddDendrites()
-        {
-            Dendrites.Add(new Dendrite().AddToNeuron(this));
-        }
-
+        
         public void Think()
         {
-                double sum = 0;
-                if (this.Dendrites.Count > 0)
-                {
-                    for (var i = 0; i < this.Dendrites.Count; i++)
-                    {
-                        sum += this.Dendrites[i].GetSourceNeuron().AxonValue * this.Dendrites[i].Weight;
-                    }
-                    this.AxonValue = 1 / (1 + Math.Exp(-sum));
-                }
+            double sum = 0;
+            if (Dendrites.Count <= 0) return;
+            sum += Dendrites.Sum(t => t.GetSourceNeuron().AxonValue * t.Weight);
+            AxonValue = 1 / (1 + Math.Exp(-sum));
         }
     }
 
-    internal class Dendrite : IDendrite
+    public class Dendrite : IDendrite
     {
-        private INeuron _neuron;
-        private IDendrite meDendrite;
+        private INeuron Neuron1 { get; set; }
 
         private Dendrite(INeuron neuron)
         {
-            meDendrite = this;
+            Neuron1 = neuron;
             Weight = 0;
         }
 
         public Dendrite()
         {
-            meDendrite = this;
-            Weight = 0;
+            Neuron1 = null;
+               Weight = 0;
         }
 
-        public IDendrite AddToNeuron(INeuron neuron) //возвращает дендрит который будет добавлен в нейрон
+        public void AddToNeuron(INeuron neuron)
         {
-            return new Dendrite(neuron);
+            Neuron1 = neuron;
         }
 
         public double Weight { get; set; }
 
         public INeuron GetSourceNeuron()
         {
-            return _neuron;
+            return Neuron1;
         }
     }
 
