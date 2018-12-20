@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using System.Xml;
-using System.Xml.Linq;
 
 namespace Neyrosetka
 {
     public partial class Form1 : Form
     {
-        private Bitmap cartina, vectorBitmap;
         public IBZ bazaZnaniy;
-        private int[] vector;
+        private Bitmap cartina, vectorBitmap;
+        private int[] vector = new int[225];
+
         public Form1()
         {
             InitializeComponent();
@@ -25,9 +23,9 @@ namespace Neyrosetka
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cartina = new Bitmap(pictureBox1.Width, pictureBox1.Height);//создание нового изображения
+            cartina = new Bitmap(pictureBox1.Width, pictureBox1.Height); //создание нового изображения
             var gr = Graphics.FromImage(cartina);
-            gr.FillRectangle(new SolidBrush(Color.Bisque), 0, 0, cartina.Width, cartina.Height);//заполняем цветом
+            gr.FillRectangle(new SolidBrush(Color.Bisque), 0, 0, cartina.Width, cartina.Height); //заполняем цветом
             pictureBox1.Image = cartina;
         }
 
@@ -55,8 +53,8 @@ namespace Neyrosetka
 
                 vectorBitmap = new Bitmap(Risovatel.ResizeImageMinImage(cartina, 15));
                 pictureBox2.Image = Risovatel.ResizeImageMaxImage(vectorBitmap, 300);
-                int[,] arr = Parser.BMPToArray(vectorBitmap);
-                this.vector = Parser.ArrayToVector(arr);
+                var arr = Parser.BMPToArray(vectorBitmap);
+                vector = Parser.ArrayToVector(arr);
 
                 IsClicked = false;
             }
@@ -65,7 +63,7 @@ namespace Neyrosetka
         private void button1_Click(object sender, EventArgs e)
         {
             var gr = Graphics.FromImage(cartina);
-            gr.FillRectangle(new SolidBrush(Color.White), 0, 0, cartina.Width, cartina.Height);
+            gr.FillRectangle(new SolidBrush(Color.Bisque), 0, 0, cartina.Width, cartina.Height);
             pictureBox1.Image = cartina;
         }
 
@@ -73,38 +71,10 @@ namespace Neyrosetka
         //тренировать
         private void button3_Click(object sender, EventArgs e)
         {
-
             if (bazaZnaniy.Brain == null)
-            {
-                IBrain brain = new Brain();//создаем мозг
-                brain.Layers = new List<ILayer>();//создаем список слоев
-                brain.Layers.Add(new Layer());//создаем входной слой
-                brain.Layers[0].Neurons = new List<INeuron>();//создаем список нейронов
-                for (int i = 0; i < vector.Length; i++)
-                {
-                    brain.Layers[0].Neurons.Add(new Neuron());//добавляем новый нейрон в слой
-                    //brain.Layers[0].Neurons[i].Dendrites = new List<IDendrite>();//создаем список дендритов
-                    //for (int j = 0; j < vector.Length; j++)
-                    //{
-                    //    brain.Layers[0].Neurons[i].Dendrites.Add(new Dendrite());//добавляем дендрит в нейрон
-                    //}
-                }
-                brain.Layers.Add(new Layer());//создаем выходной слой
-                brain.Layers[1].Neurons = new List<INeuron>();//создаем список нейронов
-                //for (int i = 0; i < vector.Length; i++)
-                //{
-                //    brain.Layers[1].Neurons.Add(new Neuron());//добавляем новый нейрон в слой
-                //    brain.Layers[1].Neurons[i].Dendrites = new List<IDendrite>();//создаем список дендритов
-                //    for (int j = 0; j < vector.Length; j++)
-                //    {
-                //        brain.Layers[1].Neurons[i].Dendrites.Add(new Dendrite());//добавляем дендрит в нейрон
-                //        brain.Layers[1].Neurons[i].Dendrites[j].AddToNeuron(brain.Layers[0].Neurons[i]);//добавляем нейрон в дендрит
-                //    }
-                //}
-                bazaZnaniy.Brain = brain;
-            }
-
-            bazaZnaniy.Train(vector, bazaZnaniy.Brain, textBox1.Text);
+                bazaZnaniy.CreateNewBrain(vector.Length); //если персептрона нет, создаем новый
+            bazaZnaniy.Train(vector, textBox1.Text);
+            button2.Enabled = true;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -115,17 +85,21 @@ namespace Neyrosetka
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             var c = e.KeyChar;
-            e.Handled = !((c >= 'а' && c <= 'я') || (c >= 'А' && c <= 'Я') || c == 'Ё' || c == 'ё' || c == 8 || c == 46);
+            var a = !(c >= 'а' && c <= 'я' || c >= 'А' && c <= 'Я' || c == 'Ё' || c == 'ё' || c == 8 || c == 46);
+            e.Handled = a && !(c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c <= '9');
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void загрузитьБЗToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            bazaZnaniy.Baza = bazaZnaniy.LoadXDocument("baza.xml");//загружаем БЗ
+            if (!bazaZnaniy.LoadBrain("baza.xml")) return;
+            MessageBox.Show("База загружена!");
+            button2.Enabled = true;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void сохранитьБЗToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            bazaZnaniy.SaveBrain(bazaZnaniy.Brain);
+            if(bazaZnaniy.SaveBrain("baza.xml"))
+            MessageBox.Show("База сохранена!");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -146,17 +120,14 @@ namespace Neyrosetka
                 str += "\r\n";
             }
             richTextBox1.Text = str;*/
-            string answer = "";
-            string values = "";
-            foreach (var valReadChar in bazaZnaniy.ReadChar(vector, bazaZnaniy.Brain, out answer))
-            {
+            string answer, values;
+            Dictionary<string, string> neurons;
+            bazaZnaniy.ReadChar(vector, out answer,out neurons);
+            values = "";
+            foreach (var valReadChar in neurons)
                 values += "Буква {" + valReadChar.Key + "} : " + valReadChar.Value + "\r\n";
-            }
 
-            answer = values + "============ОТВЕТ=============\r\n" + answer;
-
-            richTextBox1.Text = answer;
-
+            richTextBox1.Text = values + "============ОТВЕТ=============\r\n" + answer;
         }
     }
 
@@ -165,23 +136,27 @@ namespace Neyrosetka
     {
         public static int[,] BMPToArray(Bitmap image)
         {
-            string[,] arr = new string[image.Height, image.Width];
+            var arr = new string[image.Height, image.Width];
 
-            for (int i = 0; i < image.Height; i++)
-                for (int j = 0; j < image.Width; j++)
-                    arr[i, j] = image.GetPixel(j, i).Name;//ff000000
+            for (var i = 0; i < image.Height; i++)
+            for (var j = 0; j < image.Width; j++)
+                arr[i, j] = image.GetPixel(j, i).Name; //ff000000
 
-            int[,] arr1 = new int[image.Height, image.Width];
+            var arr1 = new int[image.Height, image.Width];
 
-            for (int i = 0; i < image.Height; i++)
-                for (int j = 0; j < image.Width; j++)
-                    if (arr[i, j] == "ff000000")
-                        arr1[i, j] = 1;
+            for (var i = 0; i < image.Height; i++)
+            for (var j = 0; j < image.Width; j++)
+                if (arr[i, j] == "ff000000")
+                    arr1[i, j] = 1;
             return arr1;
         }
 
-        public static int[] ArrayToVector(int[,] array) => array.Cast<int>().ToArray();
+        public static int[] ArrayToVector(int[,] array)
+        {
+            return array.Cast<int>().ToArray();
+        }
     }
+
     public class Risovatel
     {
         public static void Painter(MouseEventArgs e, Graphics gr)
@@ -189,17 +164,18 @@ namespace Neyrosetka
             var pp = new SolidBrush(Color.Black);
             gr.FillRectangle(pp, e.X, e.Y, 20, 20);
         }
+
         public static Image ResizeImageMinImage(Image originImage, int newSize)
         {
             float width = newSize;
             float height = newSize;
             var image = new Bitmap(originImage);
-            float scale = Math.Min(width / image.Width, height / image.Height);
-            var bmp = new Bitmap((int)width, (int)height);
+            var scale = Math.Min(width / image.Width, height / image.Height);
+            var bmp = new Bitmap((int) width, (int) height);
             var graph = Graphics.FromImage(bmp);
             graph.InterpolationMode = InterpolationMode.NearestNeighbor;
-            var scaleWidth = (int)(image.Width * scale);
-            var scaleHeight = (int)(image.Height * scale);
+            var scaleWidth = (int) (image.Width * scale);
+            var scaleHeight = (int) (image.Height * scale);
             graph.DrawImage(image, new Rectangle(0, 0, scaleWidth, scaleHeight));
             return bmp;
         }
@@ -210,12 +186,12 @@ namespace Neyrosetka
             float width = newSize;
             float height = newSize;
             var image = new Bitmap(originImage);
-            float scale = Math.Min(width / image.Width, height / image.Height);
-            var bmp = new Bitmap((int)width, (int)height);
+            var scale = Math.Min(width / image.Width, height / image.Height);
+            var bmp = new Bitmap((int) width, (int) height);
             var graph = Graphics.FromImage(bmp);
             graph.InterpolationMode = InterpolationMode.NearestNeighbor;
-            var scaleWidth = (int)(image.Width * scale * 1.05);
-            var scaleHeight = (int)(image.Height * scale * 1.05);
+            var scaleWidth = (int) (image.Width * scale * 1.05);
+            var scaleHeight = (int) (image.Height * scale * 1.05);
             graph.DrawImage(image, new Rectangle(0, 0, scaleWidth, scaleHeight));
             return bmp;
         }

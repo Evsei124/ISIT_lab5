@@ -1,4 +1,913 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--> Мозг<-->
-<Brain>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Brain FirstLayerNeyronCount="225">
+  <Layer>
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="1" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+    <Neuron AxonValue="0" Name="null" />
+  </Layer>
+  <Layer>
+    <Neuron AxonValue="0.76952330038847927" Name="A">
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013360034137717341" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.018648904327750526" />
+      <Dendrite Weight="0.045878194236242946" />
+      <Dendrite Weight="0.039029484682717261" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.045878194236242946" />
+      <Dendrite Weight="0.04760987026345917" />
+      <Dendrite Weight="0.069901028511789087" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.0052888701900331856" />
+      <Dendrite Weight="0.045878194236242946" />
+      <Dendrite Weight="0.031220240670952422" />
+      <Dendrite Weight="0.080740688827774756" />
+      <Dendrite Weight="0.039029484682717261" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.035038533920257263" />
+      <Dendrite Weight="0.060969904401176507" />
+      <Dendrite Weight="0.020380580354966732" />
+      <Dendrite Weight="0.0417112041450575" />
+      <Dendrite Weight="0.055419114275224009" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.016389629592506737" />
+      <Dendrite Weight="0.045878194236242946" />
+      <Dendrite Weight="0.031220240670952422" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0.010839660315985685" />
+      <Dendrite Weight="0.0662587745912097" />
+      <Dendrite Weight="0.028240806488937408" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.029749663730224078" />
+      <Dendrite Weight="0.024598552568358013" />
+      <Dendrite Weight="0.03486249459153181" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.040589324046209761" />
+      <Dendrite Weight="0.055419114275224009" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.016389629592506737" />
+      <Dendrite Weight="0.045878194236242946" />
+      <Dendrite Weight="0.036509110860985607" />
+      <Dendrite Weight="0.026392472529192669" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.010839660315985685" />
+      <Dendrite Weight="0.0662587745912097" />
+      <Dendrite Weight="0.02295193629890422" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.029749663730224078" />
+      <Dendrite Weight="0.03061044474258395" />
+      <Dendrite Weight="0.040151364781564995" />
+      <Dendrite Weight="0.019770784426598267" />
+      <Dendrite Weight="0.019770784426598267" />
+      <Dendrite Weight="0.019770784426598267" />
+      <Dendrite Weight="0.0052888701900331856" />
+      <Dendrite Weight="0.057788752528870543" />
+      <Dendrite Weight="0.055419114275224009" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.045878194236242946" />
+      <Dendrite Weight="0.052898740453492354" />
+      <Dendrite Weight="0.06738065469005744" />
+      <Dendrite Weight="0.039139848201120021" />
+      <Dendrite Weight="0.052499882338837359" />
+      <Dendrite Weight="0.06698179657540243" />
+      <Dendrite Weight="0.06698179657540243" />
+      <Dendrite Weight="0.06698179657540243" />
+      <Dendrite Weight="0.080740688827774756" />
+      <Dendrite Weight="0.025321574552550762" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.029749663730224078" />
+      <Dendrite Weight="0.054348216298582094" />
+      <Dendrite Weight="0.059062189045234852" />
+      <Dendrite Weight="0.036311970436621564" />
+      <Dendrite Weight="0.021830056200056482" />
+      <Dendrite Weight="0.021830056200056482" />
+      <Dendrite Weight="0.0084700220623391432" />
+      <Dendrite Weight="0.0084700220623391432" />
+      <Dendrite Weight="0.019309682378324828" />
+      <Dendrite Weight="0.049869144998702958" />
+      <Dendrite Weight="0.024859651654845879" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.029749663730224078" />
+      <Dendrite Weight="0.036509110860985607" />
+      <Dendrite Weight="0.026392472529192669" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.041399122936363809" />
+      <Dendrite Weight="0.042059080137506658" />
+      <Dendrite Weight="0.030871543829071816" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.054348216298582094" />
+      <Dendrite Weight="0.050991025097550692" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.024199694453703027" />
+      <Dendrite Weight="0.049869144998702958" />
+      <Dendrite Weight="0.030871543829071816" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.016389629592506737" />
+      <Dendrite Weight="0.0662587745912097" />
+      <Dendrite Weight="0.026392472529192669" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.049869144998702958" />
+      <Dendrite Weight="0.036770209947473473" />
+      <Dendrite Weight="0.030871543829071816" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.043508555982596411" />
+      <Dendrite Weight="0.064351059235268043" />
+      <Dendrite Weight="0.014481914236565079" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.029488564643736215" />
+      <Dendrite Weight="0.049869144998702958" />
+      <Dendrite Weight="0.030871543829071816" />
+    </Neuron>
+    <Neuron AxonValue="0.836633367549849" Name="B">
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.016910815252679991" />
+      <Dendrite Weight="0.036487699900207164" />
+      <Dendrite Weight="0.036487699900207164" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.030221774033190853" />
+      <Dendrite Weight="0.058091597582616304" />
+      <Dendrite Weight="0.058091597582616304" />
+      <Dendrite Weight="0.055138851464192777" />
+      <Dendrite Weight="0.0524727820693456" />
+      <Dendrite Weight="0.072049666716872782" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.061290095286467325" />
+      <Dendrite Weight="0.070230144542111225" />
+      <Dendrite Weight="0.033742444641904061" />
+      <Dendrite Weight="0.025449505740005776" />
+      <Dendrite Weight="0.020841568861824152" />
+      <Dendrite Weight="0.070640227542542178" />
+      <Dendrite Weight="0.07893316644444047" />
+      <Dendrite Weight="0.017643071157973138" />
+      <Dendrite Weight="0.031601140292229608" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.061290095286467325" />
+      <Dendrite Weight="0.053319329289431221" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.061290095286467325" />
+      <Dendrite Weight="0.024802395386260161" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0.023308201390331323" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.061290095286467325" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.036487699900207164" />
+      <Dendrite Weight="0.041713210638940151" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.047979136505956463" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01957688464752717" />
+      <Dendrite Weight="0.041713210638940151" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.047979136505956463" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01957688464752717" />
+      <Dendrite Weight="0.049798658680718026" />
+      <Dendrite Weight="0.041713210638940151" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.023308201390331323" />
+      <Dendrite Weight="0.017643071157973138" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.047979136505956463" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0.0468459125622945" />
+      <Dendrite Weight="0.042237975684112868" />
+      <Dendrite Weight="0.042237975684112868" />
+      <Dendrite Weight="0.059148790936792865" />
+      <Dendrite Weight="0.059148790936792865" />
+      <Dendrite Weight="0.0114914366057493" />
+      <Dendrite Weight="0.023308201390331323" />
+      <Dendrite Weight="0.031601140292229608" />
+      <Dendrite Weight="0.0082929389018982884" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.032887843428038029" />
+      <Dendrite Weight="0.061290095286467325" />
+      <Dendrite Weight="0.041180782329936307" />
+      <Dendrite Weight="0.081399798972947635" />
+      <Dendrite Weight="0.04786484519116397" />
+      <Dendrite Weight="0.04786484519116397" />
+      <Dendrite Weight="0.059356281796913268" />
+      <Dendrite Weight="0.07893316644444047" />
+      <Dendrite Weight="0.073314350931169767" />
+      <Dendrite Weight="0.0430925768979789" />
+      <Dendrite Weight="0.029134507763722436" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.01957688464752717" />
+      <Dendrite Weight="0.028402251858429293" />
+      <Dendrite Weight="0.050653259894584045" />
+      <Dendrite Weight="0.046045323016402413" />
+      <Dendrite Weight="0.036695190760327574" />
+      <Dendrite Weight="0.036695190760327574" />
+      <Dendrite Weight="0.033742444641904061" />
+      <Dendrite Weight="0.041827892683681922" />
+      <Dendrite Weight="0.072049666716872782" />
+      <Dendrite Weight="0.025203754154578279" />
+      <Dendrite Weight="0.020841568861824152" />
+      <Dendrite Weight="0.020841568861824152" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.01957688464752717" />
+      <Dendrite Weight="0.028402251858429293" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0.023308201390331323" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0.0468459125622945" />
+      <Dendrite Weight="0.0524727820693456" />
+      <Dendrite Weight="0.039161823288834739" />
+      <Dendrite Weight="0.034799637996080615" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.036487699900207164" />
+      <Dendrite Weight="0.028402251858429293" />
+      <Dendrite Weight="0.022251008036154759" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01957688464752717" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.025203754154578279" />
+      <Dendrite Weight="0.020841568861824152" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.036487699900207164" />
+      <Dendrite Weight="0.0114914366057493" />
+      <Dendrite Weight="0.031601140292229608" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01957688464752717" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.036695190760327574" />
+      <Dendrite Weight="0.029134507763722436" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.01331095878051086" />
+      <Dendrite Weight="0.049798658680718026" />
+      <Dendrite Weight="0.024802395386260161" />
+      <Dendrite Weight="0.044912099072740456" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0.0093501322560748459" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.031068321253276469" />
+      <Dendrite Weight="0.044379280033787327" />
+      <Dendrite Weight="0.024802395386260161" />
+      <Dendrite Weight="0.036695190760327574" />
+      <Dendrite Weight="0.017643071157973138" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.036487699900207164" />
+      <Dendrite Weight="0.031068321253276469" />
+      <Dendrite Weight="0.075980420326016943" />
+      <Dendrite Weight="0.052672218935685605" />
+      <Dendrite Weight="0.044379280033787327" />
+      <Dendrite Weight="0.044379280033787327" />
+      <Dendrite Weight="0.053729412289862166" />
+      <Dendrite Weight="0.053729412289862166" />
+      <Dendrite Weight="0.04786484519116397" />
+      <Dendrite Weight="0.048511955544909578" />
+      <Dendrite Weight="0.048511955544909578" />
+      <Dendrite Weight="0.013958069134256474" />
+      <Dendrite Weight="0.013958069134256474" />
+    </Neuron>
+    <Neuron AxonValue="0.65145801616081389" Name="C">
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0.024301785508115854" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.013430151461497937" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0.037731936969613793" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+      <Dendrite Weight="0" />
+    </Neuron>
+  </Layer>
 </Brain>

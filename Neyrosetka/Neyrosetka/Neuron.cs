@@ -13,7 +13,6 @@ namespace Neyrosetka
         void Think();
     }
 
-
     public interface IDendrite
     {
         double Weight { get; set; }
@@ -78,6 +77,4 @@ namespace Neyrosetka
             return Neuron1;
         }
     }
-
-
 }

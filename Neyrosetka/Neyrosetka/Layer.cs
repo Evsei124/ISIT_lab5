@@ -7,38 +7,21 @@ namespace Neyrosetka
     {
         List<INeuron> Neurons { get; set; }
         void Think();
-
         void ConnectNeuron(INeuron neuron);
         INeuron BestGuess();
         INeuron GetNeuron(string name);
-        ILayer CreateLayer(int NeuronCount);
     }
 
 
     public class Layer : ILayer
     {
-        //the constructor. 
-        private Layer(int NeuronCount)
-        {
-            Neurons = new List<INeuron>();
-
-            //create the requested neuron objects
-            for (var i = 0; i < NeuronCount; i++) Neurons.Add(new Neuron());
-        }
-
         public Layer()
         {
             Neurons = new List<INeuron>();
         }
         public List<INeuron> Neurons { get; set; }
-
-        public ILayer CreateLayer(int NeuronCount)
-        {
-            return new Layer(NeuronCount);
-        }
-
-
-        //make all neurons in the layer generate an output value
+        
+        //заставляет все нейроны выходного слоя вычислять выходное значение
         public void Think()
         {
             foreach (var t in Neurons)
@@ -73,8 +56,8 @@ namespace Neyrosetka
         //возвращает нейрон с наибольшим весом
         public INeuron BestGuess()
         {
-            double max = 0;
-            var bestGuessIndex = 0;
+            double max = 0.5;
+            var bestGuessIndex = -1;
 
             for (var i = 0; i < Neurons.Count; i++)
                 if (Neurons[i].AxonValue > max)
@@ -83,7 +66,7 @@ namespace Neyrosetka
                     bestGuessIndex = i;
                 }
 
-            return Neurons[bestGuessIndex];
+            return bestGuessIndex == -1 ? null : Neurons[bestGuessIndex];
         }
     }
 }
