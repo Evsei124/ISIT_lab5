@@ -33,7 +33,7 @@ namespace Neyrosetka
         {
             this.Name = Name;
             Dendrites = new List<IDendrite>();
-            AxonValue = 0.5;
+            AxonValue = 0;
         }
 
         public double AxonValue { get; set; }

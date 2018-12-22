@@ -98,8 +98,43 @@ namespace Neyrosetka
 
         private void сохранитьБЗToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(bazaZnaniy.SaveBrain("baza.xml"))
-            MessageBox.Show("База сохранена!");
+            if (bazaZnaniy.SaveBrain("baza.xml"))
+                MessageBox.Show("База сохранена!");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (bazaZnaniy.Brain == null)
+                bazaZnaniy.CreateNewBrain(vector.Length); //если персептрона нет, создаем новый
+
+            var vyborka = new Bitmap("vyborkaTraining.bmp");
+            var y = 0;
+            var width = 16;
+            var height = 20;
+            var chars = "0123456789abcdefghijklmnopqrstuvwxyz";
+            TrainingSet.Chars = new List<string>();
+            TrainingSet.Vectors = new List<int[]>();
+            foreach (var bukva in chars)
+            {
+                for (var i = 0; i < 39; i++)
+                {
+                    var oblastClone = vyborka.Clone(new Rectangle(i * (width + 3), y, width, height),
+                        vyborka.PixelFormat);
+                    var currentImg = new Bitmap(20, 20);
+                    var gr = Graphics.FromImage(currentImg);
+                    gr.FillRectangle(new SolidBrush(Color.White), 0, 0, 20, 20);
+                    gr.DrawImage(oblastClone, new Rectangle(2, 0, width, height));
+                    currentImg = Risovatel.ResizeImageMinImage(currentImg, 15);
+                    var vect = Parser.ArrayToVector(Parser.BMPToArray(currentImg));
+                    TrainingSet.Chars.Add(bukva.ToString());
+                    TrainingSet.Vectors.Add(vect);
+                }
+                y += 23;
+            }
+
+            bazaZnaniy.TrainingFromFile();
+            button2.Enabled = true;
+            MessageBox.Show("OK");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -122,12 +157,13 @@ namespace Neyrosetka
             richTextBox1.Text = str;*/
             string answer, values;
             Dictionary<string, string> neurons;
-            bazaZnaniy.ReadChar(vector, out answer,out neurons);
+            bazaZnaniy.ReadChar(vector, out answer, out neurons);
             values = "";
             foreach (var valReadChar in neurons)
                 values += "Буква {" + valReadChar.Key + "} : " + valReadChar.Value + "\r\n";
-
-            richTextBox1.Text = values + "============ОТВЕТ=============\r\n" + answer;
+            
+            richTextBox1.Text = "===================ОТВЕТ================\r\n             " + answer +
+                                "\r\n=============Выходные сигналы (удельный вес)============\r\n" + values;
         }
     }
 
@@ -165,7 +201,7 @@ namespace Neyrosetka
             gr.FillRectangle(pp, e.X, e.Y, 20, 20);
         }
 
-        public static Image ResizeImageMinImage(Image originImage, int newSize)
+        public static Bitmap ResizeImageMinImage(Image originImage, int newSize)
         {
             float width = newSize;
             float height = newSize;
@@ -181,7 +217,7 @@ namespace Neyrosetka
         }
 
 
-        public static Image ResizeImageMaxImage(Image originImage, int newSize)
+        public static Bitmap ResizeImageMaxImage(Image originImage, int newSize)
         {
             float width = newSize;
             float height = newSize;
@@ -195,5 +231,12 @@ namespace Neyrosetka
             graph.DrawImage(image, new Rectangle(0, 0, scaleWidth, scaleHeight));
             return bmp;
         }
+    }
+
+
+    public static class TrainingSet
+    {
+        public static List<string> Chars = new List<string>();
+        public static List<int[]> Vectors = new List<int[]>();
     }
 }

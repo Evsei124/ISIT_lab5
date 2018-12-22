@@ -56,7 +56,7 @@ namespace Neyrosetka
         //возвращает нейрон с наибольшим весом
         public INeuron BestGuess()
         {
-            double max = 0.5;
+            double max = 0;
             var bestGuessIndex = -1;
 
             for (var i = 0; i < Neurons.Count; i++)

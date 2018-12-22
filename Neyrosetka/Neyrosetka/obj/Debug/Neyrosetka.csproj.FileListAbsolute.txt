@@ -18,3 +18,12 @@ C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyr
 C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.exe
 C:\Users\Admin\Desktop\Истомин\laba5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.pdb
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka.exe.config
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.exe
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.pdb
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka.exe
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\bin\Debug\Neyrosetka.pdb
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.csprojResolveAssemblyReference.cache
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.Form1.resources
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.Properties.Resources.resources
+C:\Users\DatBoi\Documents\GitHub\ISIT_lab5\Neyrosetka\Neyrosetka\obj\Debug\Neyrosetka.csproj.GenerateResource.Cache

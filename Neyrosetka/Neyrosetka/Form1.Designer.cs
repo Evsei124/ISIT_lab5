@@ -42,6 +42,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.загрузитьБЗToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьБЗToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -179,11 +180,22 @@
             this.сохранитьБЗToolStripMenuItem.Text = "Сохранить БЗ";
             this.сохранитьБЗToolStripMenuItem.Click += new System.EventHandler(this.сохранитьБЗToolStripMenuItem_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(493, 362);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(134, 34);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Тренировать по файлу выборки";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 553);
+            this.ClientSize = new System.Drawing.Size(960, 449);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button3);
@@ -223,6 +235,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem загрузитьБЗToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сохранитьБЗToolStripMenuItem;
+        private System.Windows.Forms.Button button4;
     }
 }
 

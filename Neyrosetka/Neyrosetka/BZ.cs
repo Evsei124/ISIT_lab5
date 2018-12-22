@@ -10,8 +10,12 @@ namespace Neyrosetka
         void Train(int[] array, string bukva); //тренировка мозга
         bool LoadBrain(string path); //загрузка данных из файла в формате XML
         bool SaveBrain(string path); //сохранение данных из файла в формате XML
-        void ReadChar(int[] inputVector, out string answer, out Dictionary<string, string> neuronValues);//метод возвращает список нейронов и ответ сети
+
+        void ReadChar(int[] inputVector, out string answer,
+            out Dictionary<string, string> neuronValues); //метод возвращает список нейронов и ответ сети
+
         void CreateNewBrain(int inputSignalCount);
+        void TrainingFromFile();
     }
 
     public class BZ : IBZ
@@ -20,7 +24,7 @@ namespace Neyrosetka
 
         public void Train(int[] array, string bukva)
         {
-            IBrain brain = this.Brain;
+            var brain = Brain;
             var character = bukva.ToUpper(); //определение буквы, которой будем обучать
             if (character.Length == 0) return; //проверка наличия буквы
             var inputLayer = brain.Layers[0]; //входной слой
@@ -38,11 +42,12 @@ namespace Neyrosetka
             brain.Train(array, outputNeuron);
         }
 
+
         public bool LoadBrain(string path)
         {
             var dataBase = XDocument.Load(path);
             var Xbrain = dataBase.Root;
-            IBrain brain = new Brain();
+            IBrain brain = new Network();
             var first = true;
             foreach (var Xlayer in Xbrain.Elements())
             {
@@ -54,9 +59,11 @@ namespace Neyrosetka
 
             if (brain.Layers.Count < 2)
             {
-                MessageBox.Show("Неподдерживаемый файл, обновите файл и повторите попытку. Или просто натренируйте сеть заново.");
+                MessageBox.Show(
+                    "Неподдерживаемый файл, обновите файл и повторите попытку. Или просто натренируйте сеть заново.");
                 return false;
             }
+
             Brain = brain;
             return true;
         }
@@ -100,9 +107,9 @@ namespace Neyrosetka
             return true;
         }
 
-        public void ReadChar(int[] inputVector, out string answer,out Dictionary<string, string> neuronValues)
+        public void ReadChar(int[] inputVector, out string answer, out Dictionary<string, string> neuronValues)//распознать символ
         {
-            IBrain brain = this.Brain;
+            var brain = Brain;
             var inputLayer = brain.Layers[0]; //входной слой
             var outputLayer = brain.Layers[brain.Layers.Count - 1]; //выходной слой
 
@@ -111,12 +118,20 @@ namespace Neyrosetka
 
             //make the network 'think'
             brain.Think();
-
-            neuronValues = new Dictionary<string, string>();
+            double sum = 0;
+            var neuronValuesT = new Dictionary<string, string>();
             for (var i = 0; i < outputLayer.Neurons.Count; i++)
             {
                 var neuron = outputLayer.Neurons[i];
-                neuronValues.Add(neuron.Name.ToUpper(), neuron.AxonValue.ToString());
+                neuronValuesT.Add(neuron.Name.ToUpper(), neuron.AxonValue.ToString());
+                sum += neuron.AxonValue;
+            }
+
+            neuronValues = new Dictionary<string, string>();
+
+            foreach (var item in neuronValuesT)
+            {
+                neuronValues.Add(item.Key,(double.Parse(item.Value)/sum).ToString());
             }
 
             var bestGuess = outputLayer.BestGuess();
@@ -126,7 +141,7 @@ namespace Neyrosetka
 
         public void CreateNewBrain(int inputSignalCount)
         {
-            IBrain brain = new Brain(); //создаем мозг
+            IBrain brain = new Network(); //создаем мозг
             brain.Layers = new List<ILayer> {new Layer()}; //создаем список слоев //создаем входной слой
             brain.Layers[0].Neurons = new List<INeuron>(); //создаем список нейронов
             for (var i = 0; i < inputSignalCount; i++)
@@ -134,6 +149,13 @@ namespace Neyrosetka
             brain.Layers.Add(new Layer()); //создаем выходной слой
             brain.Layers[1].Neurons = new List<INeuron>(); //создаем список нейронов
             Brain = brain;
+        }
+
+        public void TrainingFromFile()
+        {
+            for (var epoch = 0; epoch < 10; ++epoch)
+            for (var i = 0; i < TrainingSet.Vectors.Count; ++i)
+                Train(TrainingSet.Vectors[i], TrainingSet.Chars[i]);
         }
 
         private ILayer methodForFirstLayer(XElement Xlayer)
